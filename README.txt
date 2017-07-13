@@ -1,3 +1,2 @@
-Esta es una implementacion del reproductor de video Shaka de Google en una pagina web.
-
+Google shaka video player implemented in a simple web page sample.
 
