@@ -29,6 +29,23 @@ a:hover{
 	opacity: 1;
 }
 
+.boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 600;
+    font-size: 5vh;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+  }
+
+.boton_personalizado:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+
 a.btn{
 	color: #fff;
 	border-radius: 4px;
@@ -36,6 +53,23 @@ a.btn{
 	background-color: #2196F3;
 	font-weight: 800;
 	text-align: center;
+}
+
+.botsalcaja{width: 100%;
+       height: 35px;
+       position: absolute;
+       bottom: 30px; 
+       text-align: center;
+       overflow: visible;
+}
+.botsalto{margin: 0 auto;
+          height: 20px;
+          padding-bottom: 20px;
+          text-align: center;
+          width: 40px;
+          font-family: iconFont;
+          font-size: 45px;
+          cursor: pointer;
 }
 
 hr{
@@ -500,6 +534,36 @@ footer p a{
 
 }
 
+.parpadea {
+  
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 2.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 2.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 2.0; }
+}
 
 /* -- Demo ads -- */
 

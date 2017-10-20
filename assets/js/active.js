@@ -3,10 +3,11 @@
       JS INDEX
     =============
 
-    01. Navigation
-    02. Smoothscroll js
-    03. Gallery Lightbox
-    04. Testimonial slider
+    01. Navegacion
+    02. Scroll suave
+    03. Galeria
+    04. Slider de testimonios
+    05. Boton de Salto de pagina.
 
 -------------------------------------------------------------------------------------*/
 
@@ -15,7 +16,7 @@
 
     
     /*==============================================
-	               01. Navigation
+	               01. Navegacion
 	===============================================*/
         
 	$('a.page-scroll').on('click', function(e){
@@ -43,7 +44,7 @@
         
     
     /*==============================================
-	               02. Smoothscroll js
+	               02. Scroll suave
 	===============================================*/
 
         $('a[href*="#"]:not([href="#"])').on(function() {
@@ -61,7 +62,7 @@
 
         
     /*==============================================
-                    03. Gallery Lightbox
+                    03. Galeria
     ===============================================*/
 	           
      $(".gallery-lightbox").magnificPopup({
@@ -88,7 +89,7 @@
         
         
         /*==============================================
-                       04. Testimonial slider
+                       04. Slider de testimonios
         ===============================================*/
 
         $('.client-say').owlCarousel({
@@ -121,4 +122,12 @@
 
 
 }(jQuery));	
+
+        /*==============================================
+                       05. Boton de Salto de pagina.
+        ===============================================*/
+
+    $('html, body').animate({
+        scrollTop: $("#target-element").offset().top
+    }, 1000);
 
